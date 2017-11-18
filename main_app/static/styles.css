@@ -1,0 +1,68 @@
+html {
+
+text-rendering: optimizeLegibility !important;
+
+-webkit-font-smoothing: antialiased !important;
+
+}
+
+body{
+	background-color: #0e1215;
+}
+
+hr {
+
+  	border: 1px solid;
+  	color: #233142;
+}
+
+#nome{
+	color: #fecea8;
+	position: absolute;
+	top: 2%;
+	left: 6%;
+}
+
+#subnome{
+	color: #fecea8;
+	position: absolute;
+	top: 1.7%;
+	left: 9%;
+	letter-spacing: 2px;
+}
+.break-word {
+  width: 10em;
+  background: transparent;
+  overflow-wrap: break-word;
+}
+#underheader{
+	color: #deb594;
+	text-align: center;
+	margin-top: 10%;
+	letter-spacing: 2px;
+}
+
+#genres{
+	color: #fecea8;
+	text-align: center;
+	margin-top: 2%;
+	letter-spacing: 2px;
+}
+
+#albums{
+	text-align: center;
+	margin-left: 15%;
+	
+}
+
+
+.col-half-offset{
+    margin-left:4.166666667%
+}
+
+img {
+    height: auto; 
+    width: auto; 
+    max-width: 148px; 
+    max-height: 148px;
+}

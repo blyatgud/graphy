@@ -1,0 +1,59 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Musicography - Your Way To Discover Music</title>
+
+     <link href="{% static 'bootstrap.min.css' %}" rel="stylesheet">
+ <link href="{% static 'styles.css' %}" rel="stylesheet">
+    
+    
+  </head>
+  <body>
+  <header>
+    <p id="nome" style="font-family:'Gladifilthefte';font-weight:normal;font-size:62px">MUSICOGRAPHY</p>
+    <p id="subnome" style="font-family:'Gabriola';font-weight:normal;font-size:17.5px">y o u r w a y t o d i s c o v e r m u s i c</p>
+
+    <figcaption style="margin-left: 74%; margin-top: 5%; font-family:'Gabriola';font-weight:normal; font-size: 22px; color: #deb594;">home - search</a>
+
+  </header>
+
+   <hr>
+  <p id="underheader" style=" margin-top: 4%; font-family:'Gabriola';font-weight:normal;font-size:22.5px">c h o o s e o n e o f t h e m u s i c g e n r e s b e l o w t o s t a r t</p>
+  <center><p style="color: #655243; letter-spacing: 2px;">(m o r e t o c o m e s o o n)</p></center>
+   <i><b><p id="genres" style="font-family: 'Tulpen One';font-size: 32.5px;">{{ graphy.genero }} > S T A R T</p></i></b>
+     <br>
+     <br>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-2" id="p1"></div>
+        {% for graphy in musico %}
+        <div class="col-xs-2 col-half-offset" id="p2"><img src="{{ graphy.img_url }}" ">
+            <center><figcaption class="break-word" style="font-family:'Gabriola';font-weight:normal; font-size: 15px; color: #deb594;">{{ graphy.grupo }}<br>
+              {{ graphy.nome }}</figcaption></center></div>
+              {% endfor %} 
+    </div>
+</div>
+
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<footer>
+  
+<center><img src="{% static 'images/bubble.png' %}"></center>
+
+</footer>
+  </body>
+</html>
